@@ -17,7 +17,20 @@ VALUES
   ('4/2017', 'Steve', 'Kingori', 'DBIT', 'Male', '1/3/1978');
   SELECT * FROM dms_exam;
 
+--i)
   SELECT first_name, last_name FROM employees;
 
+  --ii)
   SELECT CONCAT(Last_Name, ' ', First_Name) AS Student_name
 FROM your_table;
+
+--iii)
+SELECT 'Male' FROM dms_exam WHERE Male='DCS';
+
+
+--iii)
+SELECT SUM(DISTINCT Course) FROM dms_exam 
+
+--iv)
+ALTER TABLE dms_exam
+Last_Name = 'Mwangi'
